@@ -1,25 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28125" started-at="2019-04-18T19:35:12Z" finished-at="2019-04-18T19:35:40Z">
+  <suite name="Default suite" duration-ms="16267" started-at="2019-04-18T19:59:22Z" finished-at="2019-04-18T19:59:39Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28125" started-at="2019-04-18T19:35:12Z" finished-at="2019-04-18T19:35:40Z">
+    <test name="Default test" duration-ms="16267" started-at="2019-04-18T19:59:22Z" finished-at="2019-04-18T19:59:39Z">
       <class name="com.ethoca.automation.challenge.testngMaven.TestNgExample">
-        <test-method status="PASS" signature="chromderiverSetup()[pri:0, instance:com.ethoca.automation.challenge.testngMaven.TestNgExample@5d5eef3d]" name="chromderiverSetup" is-config="true" duration-ms="8" started-at="2019-04-18T15:35:12Z" finished-at="2019-04-18T15:35:12Z">
+        <test-method status="PASS" signature="chromderiverSetup()[pri:0, instance:com.ethoca.automation.challenge.testngMaven.TestNgExample@794cb805]" name="chromderiverSetup" is-config="true" duration-ms="11" started-at="2019-04-18T15:59:22Z" finished-at="2019-04-18T15:59:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- chromderiverSetup -->
-        <test-method status="PASS" signature="setupExpectedResults()[pri:0, instance:com.ethoca.automation.challenge.testngMaven.TestNgExample@5d5eef3d]" name="setupExpectedResults" is-config="true" duration-ms="7464" started-at="2019-04-18T15:35:12Z" finished-at="2019-04-18T15:35:19Z">
+        <test-method status="PASS" signature="setupExpectedResults()[pri:0, instance:com.ethoca.automation.challenge.testngMaven.TestNgExample@794cb805]" name="setupExpectedResults" is-config="true" duration-ms="7698" started-at="2019-04-18T15:59:23Z" finished-at="2019-04-18T15:59:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupExpectedResults -->
-        <test-method status="PASS" signature="EthocaChallenge()[pri:0, instance:com.ethoca.automation.challenge.testngMaven.TestNgExample@5d5eef3d]" name="EthocaChallenge" duration-ms="19537" started-at="2019-04-18T15:35:19Z" finished-at="2019-04-18T15:35:39Z">
+        <test-method status="FAIL" signature="EthocaChallenge()[pri:0, instance:com.ethoca.automation.challenge.testngMaven.TestNgExample@794cb805]" name="EthocaChallenge" duration-ms="6979" started-at="2019-04-18T15:59:30Z" finished-at="2019-04-18T15:59:37Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: Element <span class="continue btn btn-default button exclusive-medium" title="Continue shopping">...</span> is not clickable at point (959, 394). Other element would receive the click: <div class="fancybox-overlay fancybox-overlay-fixed" style="display: block; width: auto; height: auto; opacity: 0.0196;"></div>
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CI0700000003457', ip: '10.135.40.30', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: C:\Users\KISHPA~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:54464}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
+Session ID: 74435c4fce4d378cfbec9714131f10dc]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <span class="continue btn btn-default button exclusive-medium" title="Continue shopping">...</span> is not clickable at point (959, 394). Other element would receive the click: <div class="fancybox-overlay fancybox-overlay-fixed" style="display: block; width: auto; height: auto; opacity: 0.0196;"></div>
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CI0700000003457', ip: '10.135.40.30', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: C:\Users\KISHPA~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:54464}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
+Session ID: 74435c4fce4d378cfbec9714131f10dc
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.ethoca.automation.challenge.helpers.WebUtils.click(WebUtils.java:24)
+	at com.ethoca.automation.challenge.pages.HomePage.click(HomePage.java:25)
+	at com.ethoca.automation.challenge.testngMaven.TestNgExample.EthocaChallenge(TestNgExample.java:86)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EthocaChallenge -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.ethoca.automation.challenge.testngMaven.TestNgExample@5d5eef3d]" name="closeBrowser" is-config="true" duration-ms="1104" started-at="2019-04-18T15:35:39Z" finished-at="2019-04-18T15:35:40Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.ethoca.automation.challenge.testngMaven.TestNgExample@794cb805]" name="closeBrowser" is-config="true" duration-ms="1562" started-at="2019-04-18T15:59:37Z" finished-at="2019-04-18T15:59:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

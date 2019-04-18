@@ -1,5 +1,7 @@
 package com.ethoca.automation.challenge.helpers;
 
+/* All the locators */
+
 import org.openqa.selenium.By;
 
 public class Locator {
