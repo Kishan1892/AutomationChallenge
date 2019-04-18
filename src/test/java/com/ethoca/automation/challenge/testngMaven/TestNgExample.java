@@ -41,12 +41,12 @@ public class TestNgExample {
 		driver.get(Locator.URL);
 		
 		// Intialize HomePage
-	    objHome = new HomePage(driver);
+	        objHome = new HomePage(driver);
 	    
 		// Intialize Locator
-	    locator = new Locator();
+	        locator = new Locator();
 	    
-	    // Expected String Values
+	        // Expected String Values
 		expectedDress = "Printed Chiffon Dress";
 		expectedSizeColor = "Color : Yellow, Size : M";
 		expectedQuantity = "1";
