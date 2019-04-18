@@ -52,6 +52,12 @@ public class TestNgExample {
 		locator = new Locator();
 
 		// Expected String Values
+		objHome = new HomePage(driver);
+
+		// Intialize Locator
+		locator = new Locator();
+
+		// Expected String Values
 		expectedDress = "Printed Chiffon Dress";
 		expectedSizeColor = "Color : Yellow, Size : M";
 		expectedQuantity = "1";
@@ -101,7 +107,7 @@ public class TestNgExample {
 			// Wait for Continue Shopping Button to be Visible
 			objHome.waitForElement(locator.continueShopping);
 			objHome.implicitWait(1);
-			
+
 			// Click on Continue Shopping Button
 			objHome.click(locator.continueShopping);
 

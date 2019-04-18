@@ -57,8 +57,7 @@ public class WebUtils {
 	}
 
 	public void implicitWait(long seconds) {
-		driver.manage().timeouts().implicitlyWait(seconds, TimeUnit.SECONDS);
-		
+		driver.manage().timeouts().implicitlyWait(seconds, TimeUnit.SECONDS);		
 	}
 
 }
