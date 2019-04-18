@@ -68,24 +68,24 @@ public class Locator {
 	
 	public By postal = By.id("postcode");
 	
-    public By other = By.id("other");
+        public By other = By.id("other");
 
-    public By phone = By.id("phone");
+        public By phone = By.id("phone");
     
-    public By mobilePhone = By.id("phone_mobile");
+        public By mobilePhone = By.id("phone_mobile");
     
-    public By processAddress = By.xpath("//button[@name='processAddress']");
+        public By processAddress = By.xpath("//button[@name='processAddress']");
     
-    public By uniform = By.id("uniform-cgv");
+        public By uniform = By.id("uniform-cgv");
     
-    public By processCarrier = By.xpath("//button[@name='processCarrier']");
+        public By processCarrier = By.xpath("//button[@name='processCarrier']");
     
-    public By productPrintedChiffonDressNameText  = By.xpath("//p[@class='product-name']/a[contains(text(),'Printed Chiffon Dress')]");
+        public By productPrintedChiffonDressNameText  = By.xpath("//p[@class='product-name']/a[contains(text(),'Printed Chiffon Dress')]");
     
-    public By productPrintedChiffonDressSizeColorText = By.xpath("//td[p[@class='product-name']/a[contains(text(),'Printed Chiffon Dress')]]/small/a");
+        public By productPrintedChiffonDressSizeColorText = By.xpath("//td[p[@class='product-name']/a[contains(text(),'Printed Chiffon Dress')]]/small/a");
     
-    public By productPrintedChiffonDressQuantity  = By.xpath("//tr[td[p[@class='product-name']/a[contains(text(),'Printed Chiffon Dress')]]]/td[@class='cart_quantity text-center']");
+        public By productPrintedChiffonDressQuantity  = By.xpath("//tr[td[p[@class='product-name']/a[contains(text(),'Printed Chiffon Dress')]]]/td[@class='cart_quantity text-center']");
     
-    public By productPrintedChiffonDressQuantityOnePrice = By.xpath("//tr[td[p[@class='product-name']/a[contains(text(),'Printed Chiffon Dress')]]]//td[@class='cart_total']");
+        public By productPrintedChiffonDressQuantityOnePrice = By.xpath("//tr[td[p[@class='product-name']/a[contains(text(),'Printed Chiffon Dress')]]]//td[@class='cart_total']");
 
 }
