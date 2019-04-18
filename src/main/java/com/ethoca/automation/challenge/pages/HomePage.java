@@ -82,4 +82,9 @@ public class HomePage {
 		webUtils.waitWithvisibilityOfElementLocated(locator);
 	}
 
+	public void implicitWait(long seconds) {
+		webUtils.implicitWait(seconds);
+		
+	}
+
 }

@@ -1,5 +1,7 @@
 package com.ethoca.automation.challenge.helpers;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -52,6 +54,11 @@ public class WebUtils {
 
 	public void waitWithvisibilityOfElementLocated(By locator) {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(locator));	
+	}
+
+	public void implicitWait(long seconds) {
+		driver.manage().timeouts().implicitlyWait(seconds, TimeUnit.SECONDS);
+		
 	}
 
 }
