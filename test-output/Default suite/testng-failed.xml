@@ -7,7 +7,6 @@
         <methods>
           <include name="setupExpectedResults"/>
           <include name="EthocaChallenge"/>
-          <include name="closeBrowser"/>
           <include name="chromderiverSetup"/>
         </methods>
       </class> <!-- com.ethoca.automation.challenge.testngMaven.TestNgExample -->
