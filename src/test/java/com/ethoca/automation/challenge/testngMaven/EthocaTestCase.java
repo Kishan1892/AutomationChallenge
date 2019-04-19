@@ -25,6 +25,7 @@ public class EthocaTestCase {
 	String expectedSizeColor;
 	String expectedQuantity;
 	String expectedTotal;
+	long randomNumber;
 
 	@BeforeSuite()
 	public void chromderiverSetup() {
@@ -67,6 +68,9 @@ public class EthocaTestCase {
 		expectedSizeColor = "Color : Yellow, Size : M";
 		expectedQuantity = "1";
 		expectedTotal = "$16.40";
+		
+		//Random Number
+		randomNumber = Math.round(Math.random() * 10000000);
 	}
 
 	@Test
@@ -135,7 +139,7 @@ public class EthocaTestCase {
 			objHome.waitForElement(locator.submitCreate);
 
 			// Enter Email id with a random number
-			objHome.enterText(locator.emailCreate, Math.round(Math.random() * 10000000) + "_kishan@gmail.com");
+			objHome.enterText(locator.emailCreate, randomNumber + "_kishan@gmail.com");
 
 			// Click Register
 			objHome.click(locator.submitCreate);
