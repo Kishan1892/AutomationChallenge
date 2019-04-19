@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="EthocaChallenge">
+  <test name="Ethoca Test Case">
+    <classes>
+      <class name="com.ethoca.automation.challenge.testngMaven.EthocaTestCase"/>
+    </classes>
+  </test>
+</suite>
