@@ -124,7 +124,7 @@ public class EthocaTestCase {
 
 			// Wait for Continue Shopping Button to be Visible
 			objHome.waitForElement(locator.continueShopping);
-			objHome.implicitWait(1);
+			objHome.implicitWait(2);
 
 			// Click on Continue Shopping Button
 			objHome.click(locator.continueShopping);
@@ -163,7 +163,7 @@ public class EthocaTestCase {
 			// Enter Password
 			objPayment.enterText(locator.password, "123456");
 
-			// Select Date of Birth
+			// Select Date of Birth : (Day, Month, Year)
 			objPayment.selectDateofBirth("18", "1", "1992");
 
 			// Check Newsletter
@@ -175,10 +175,10 @@ public class EthocaTestCase {
 			// Enter Company Name
 			objPayment.enterText(locator.companyName, "Ethoca");
 
-			// Enter Address
+			// Enter Address : (address, address2, city, state, postal code)
 			objPayment.enterAddress("North York", "Toronto", "Toronto", "5", "12345");
 
-			// Enter Mobile numbers
+			// Enter Other Details : (Additional Information, Home Phone, Mobile Phone)
 			objPayment.otherDetails("Hello Everyone", "2264020567", "2264020567");
 
 			// Click submit button
