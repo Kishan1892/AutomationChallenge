@@ -25,23 +25,14 @@
 
 	<build>
 		<plugins>
-			<!-- Compiler plug-in -->
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<configuration>
-					<source>${jdk.level}</source>
-					<target>${jdk.level}</target>
-				</configuration>
-			</plugin>
-			<!-- Below plug-in is used to execute tests -->
+			<!-- Maven plugin -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.18.1</version>
 				<configuration>
 					<suiteXmlFiles>
-						<!-- TestNG suite XML files -->
+						<!-- TestNG XML file -->
 						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
@@ -62,14 +53,6 @@
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>6.10</version>
-			<scope>test</scope>
-		</dependency>
-
-
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>

@@ -10,7 +10,9 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 /* Author : Kishan */
-//Selenium Actions
+/*
+ * All the Selenium actions methods related to any Page
+ */
 
 public class WebUtils {
 
@@ -56,7 +58,8 @@ public class WebUtils {
 		driver.switchTo().frame(driver.findElement(element));
 	}
 
-	// Selenium Select Method to select an element from Select Tag by value attribute
+	// Selenium Select Method to select an element from Select Tag by value
+	// attribute
 	public void selectByValue(By element, String value) {
 		dropdown = new Select(driver.findElement(element));
 		dropdown.selectByValue(value);
@@ -64,12 +67,12 @@ public class WebUtils {
 
 	// Selenium Explicit Wait
 	public void waitWithvisibilityOfElementLocated(By locator) {
-		wait.until(ExpectedConditions.visibilityOfElementLocated(locator));	
+		wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 	}
 
 	// Selenium Implicit Wait
 	public void implicitWait(long seconds) {
-		driver.manage().timeouts().implicitlyWait(seconds, TimeUnit.SECONDS);		
+		driver.manage().timeouts().implicitlyWait(seconds, TimeUnit.SECONDS);
 	}
 
 }

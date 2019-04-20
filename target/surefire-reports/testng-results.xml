@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="EthocaChallenge" duration-ms="28516" started-at="2019-04-19T02:45:40Z" finished-at="2019-04-19T02:46:09Z">
+  <suite name="EthocaChallenge" duration-ms="30103" started-at="2019-04-20T04:07:59Z" finished-at="2019-04-20T04:08:30Z">
     <groups>
     </groups>
-    <test name="Ethoca Test Case" duration-ms="28516" started-at="2019-04-19T02:45:40Z" finished-at="2019-04-19T02:46:09Z">
+    <test name="Ethoca Test Case" duration-ms="30103" started-at="2019-04-20T04:07:59Z" finished-at="2019-04-20T04:08:30Z">
       <class name="com.ethoca.automation.challenge.testngMaven.EthocaTestCase">
-        <test-method status="PASS" signature="chromderiverSetup()[pri:0, instance:com.ethoca.automation.challenge.testngMaven.EthocaTestCase@45c8e616]" name="chromderiverSetup" is-config="true" duration-ms="21" started-at="2019-04-18T22:45:40Z" finished-at="2019-04-18T22:45:40Z">
+        <test-method status="PASS" signature="chromderiverSetup()[pri:0, instance:com.ethoca.automation.challenge.testngMaven.EthocaTestCase@5e025e70]" name="chromderiverSetup" is-config="true" duration-ms="16" started-at="2019-04-20T00:07:59Z" finished-at="2019-04-20T00:07:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- chromderiverSetup -->
-        <test-method status="PASS" signature="setupExpectedResults()[pri:0, instance:com.ethoca.automation.challenge.testngMaven.EthocaTestCase@45c8e616]" name="setupExpectedResults" is-config="true" duration-ms="7925" started-at="2019-04-18T22:45:40Z" finished-at="2019-04-18T22:45:48Z">
+        <test-method status="PASS" signature="setupExpectedResults()[pri:0, instance:com.ethoca.automation.challenge.testngMaven.EthocaTestCase@5e025e70]" name="setupExpectedResults" is-config="true" duration-ms="9123" started-at="2019-04-20T00:07:59Z" finished-at="2019-04-20T00:08:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupExpectedResults -->
-        <test-method status="PASS" signature="EthocaChallenge()[pri:0, instance:com.ethoca.automation.challenge.testngMaven.EthocaTestCase@45c8e616]" name="EthocaChallenge" duration-ms="20389" started-at="2019-04-18T22:45:48Z" finished-at="2019-04-18T22:46:09Z">
+        <test-method status="PASS" signature="EthocaChallenge()[pri:0, instance:com.ethoca.automation.challenge.testngMaven.EthocaTestCase@5e025e70]" name="EthocaChallenge" duration-ms="20787" started-at="2019-04-20T00:08:09Z" finished-at="2019-04-20T00:08:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EthocaChallenge -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.ethoca.automation.challenge.testngMaven.EthocaTestCase@45c8e616]" name="closeBrowser" is-config="true" duration-ms="170" started-at="2019-04-18T22:46:09Z" finished-at="2019-04-18T22:46:09Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.ethoca.automation.challenge.testngMaven.EthocaTestCase@5e025e70]" name="closeBrowser" is-config="true" duration-ms="161" started-at="2019-04-20T00:08:29Z" finished-at="2019-04-20T00:08:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

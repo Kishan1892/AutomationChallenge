@@ -14,13 +14,18 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import com.ethoca.automation.challenge.helpers.Locator;
 import com.ethoca.automation.challenge.pages.HomePage;
+import com.ethoca.automation.challenge.pages.PaymentPage;
 
 /* Author : Kishan */
+/*
+ * All the Selenium actions methods related to any Page
+ */
 
 public class EthocaTestCase {
 
 	public WebDriver driver;
 	public HomePage objHome;
+	public PaymentPage objPayment;
 	public Locator locator;
 	public String expectedDress;
 	public String expectedSizeColor;
@@ -31,13 +36,13 @@ public class EthocaTestCase {
 	@BeforeSuite()
 	public void chromderiverSetup() {
 		// Set chromdriver.exe
-		String path = System.getProperty("user.dir");		
-		String os = System.getProperty("os.name").toLowerCase();		
+		String path = System.getProperty("user.dir");
+		String os = System.getProperty("os.name").toLowerCase();
 		if (os.contains("mac")) {
 			System.setProperty("webdriver.chrome.driver", path + "//resources//chromedriver");
 		} else {
 			System.setProperty("webdriver.chrome.driver", path + "//resources//chromedriver_windows.exe");
-		}		
+		}
 	}
 
 	@BeforeTest()
@@ -55,6 +60,9 @@ public class EthocaTestCase {
 		// Intialize HomePage
 		objHome = new HomePage(driver);
 
+		// Intialize Payment Page
+		objPayment = new PaymentPage(driver);
+
 		// Intialize Locator
 		locator = new Locator();
 
@@ -69,8 +77,8 @@ public class EthocaTestCase {
 		expectedSizeColor = "Color : Yellow, Size : M";
 		expectedQuantity = "1";
 		expectedTotal = "$16.40";
-		
-		//Random Number
+
+		// Random Number
 		randomNumber = Math.round(Math.random() * 10000000);
 	}
 
@@ -131,91 +139,91 @@ public class EthocaTestCase {
 			objHome.click(locator.orderCart);
 
 			// Wait for Proceed Checkout to be visible
-			objHome.waitForElement(locator.proceedCheckOut);
+			objPayment.waitForElement(locator.proceedCheckOut);
 
 			// Click Proceed Checkout
-			objHome.click(locator.proceedCheckOut);
+			objPayment.click(locator.proceedCheckOut);
 
 			// Wait for Register Button to be visible
-			objHome.waitForElement(locator.submitCreate);
+			objPayment.waitForElement(locator.submitCreate);
 
 			// Enter Email id with a random number
-			objHome.enterText(locator.emailCreate, randomNumber + "_kishan@gmail.com");
+			objPayment.enterText(locator.emailCreate, randomNumber + "_kishan@gmail.com");
 
 			// Click Register
-			objHome.click(locator.submitCreate);
+			objPayment.click(locator.submitCreate);
 
 			// Fill the details in the form
 			// Wait for Submit Button to be visible
-			objHome.waitForElement(locator.submitAccount);
+			objPayment.waitForElement(locator.submitAccount);
 
 			// Select Gender Radio button | Enter Firstname | Enter Lastname
-			objHome.setUsername("Male", "Kishan", "Patel");
+			objPayment.setUsername("Male", "Kishan", "Patel");
 
 			// Enter Password
-			objHome.enterText(locator.password, "123456");
+			objPayment.enterText(locator.password, "123456");
 
 			// Select Date of Birth
-			objHome.selectDateofBirth("18", "1", "1992");
+			objPayment.selectDateofBirth("18", "1", "1992");
 
 			// Check Newsletter
-			objHome.click(locator.newsLetter);
+			objPayment.click(locator.newsLetter);
 
 			// Check Offers
-			objHome.click(locator.option);
+			objPayment.click(locator.option);
 
 			// Enter Company Name
-			objHome.enterText(locator.companyName, "Ethoca");
+			objPayment.enterText(locator.companyName, "Ethoca");
 
 			// Enter Address
-			objHome.enterAddress("North York", "Toronto", "Toronto", "5", "12345");
+			objPayment.enterAddress("North York", "Toronto", "Toronto", "5", "12345");
 
 			// Enter Mobile numbers
-			objHome.otherDetails("Hello Everyone", "2264020567", "2264020567");
+			objPayment.otherDetails("Hello Everyone", "2264020567", "2264020567");
 
 			// Click submit button
-			objHome.click(locator.submitAccount);
+			objPayment.click(locator.submitAccount);
 
 			// Wait for Process Address Button to be visible
-			objHome.waitForElement(locator.processAddress);
+			objPayment.waitForElement(locator.processAddress);
 
 			// Click Process Address Button
-			objHome.click(locator.processAddress);
+			objPayment.click(locator.processAddress);
 
 			// Click Terms and Service
-			objHome.click(locator.uniform);
+			objPayment.click(locator.uniform);
 
 			// Wait for Process Carrier Button to be visible
-			objHome.waitForElement(locator.processCarrier);
+			objPayment.waitForElement(locator.processCarrier);
 
 			// Click Process Carrier Button
-			objHome.click(locator.processCarrier);
+			objPayment.click(locator.processCarrier);
 
 			// GetText of Dress
-			String actualDress = objHome.getText(locator.productPrintedChiffonDressNameText);
+			String actualDress = objPayment.getText(locator.productPrintedChiffonDressNameText);
 
 			// Verify Dress name
 			Assert.assertEquals(expectedDress, actualDress);
 
 			// GetText of Size and Color
-			String actualSizeColor = objHome.getText(locator.productPrintedChiffonDressSizeColorText);
+			String actualSizeColor = objPayment.getText(locator.productPrintedChiffonDressSizeColorText);
 
 			// Verify Size and Color
 			Assert.assertEquals(expectedSizeColor, actualSizeColor);
 
 			// GetText of Quantity
-			String actualQuantity = objHome.getText(locator.productPrintedChiffonDressQuantity);
+			String actualQuantity = objPayment.getText(locator.productPrintedChiffonDressQuantity);
 
 			// Verify Quantity
 			Assert.assertEquals(expectedQuantity, actualQuantity);
 
 			// GetText Total Amount
-			String actualTotal = objHome.getText(locator.productPrintedChiffonDressQuantityOnePrice);
+			String actualTotal = objPayment.getText(locator.productPrintedChiffonDressQuantityOnePrice);
 
 			// Verify Total Amount
 			Assert.assertEquals(expectedTotal, actualTotal);
-		} //Catch Exception as per the order they occur
-		  catch (InvalidSelectorException e) {
+		} // Catch Exception as per the order they occur
+		catch (InvalidSelectorException e) {
 			System.out.println("Selector is Invalid");
 			System.out.println(e.getMessage());
 		} catch (ElementNotVisibleException e) {
