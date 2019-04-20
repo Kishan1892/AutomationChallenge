@@ -12,19 +12,20 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import com.ethoca.automation.challenge.helpers.Locator;
 import com.ethoca.automation.challenge.pages.HomePage;
 
+/* Author : Kishan */
+
 public class EthocaTestCase {
 
-	WebDriver driver;
-	HomePage objHome;
-	Locator locator;
-	String expectedDress;
-	String expectedSizeColor;
-	String expectedQuantity;
-	String expectedTotal;
+	public WebDriver driver;
+	public HomePage objHome;
+	public Locator locator;
+	public String expectedDress;
+	public String expectedSizeColor;
+	public String expectedQuantity;
+	public String expectedTotal;
 	long randomNumber;
 
 	@BeforeSuite()
@@ -213,7 +214,8 @@ public class EthocaTestCase {
 
 			// Verify Total Amount
 			Assert.assertEquals(expectedTotal, actualTotal);
-		} catch (InvalidSelectorException e) {
+		} //Catch Exception as per the order they occur
+		  catch (InvalidSelectorException e) {
 			System.out.println("Selector is Invalid");
 			System.out.println(e.getMessage());
 		} catch (ElementNotVisibleException e) {

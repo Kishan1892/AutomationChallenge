@@ -1,6 +1,7 @@
 package com.ethoca.automation.challenge.helpers;
 
-/* All the locators */
+/* All the locators identified from Document Object Model  */
+/* Author : Kishan */
 
 import org.openqa.selenium.By;
 

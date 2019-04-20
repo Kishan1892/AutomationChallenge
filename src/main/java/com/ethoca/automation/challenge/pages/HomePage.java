@@ -8,9 +8,9 @@ import com.ethoca.automation.challenge.helpers.WebUtils;
 
 public class HomePage {
 
-	WebDriverWait wait;
-	Locator locator;
-	WebUtils webUtils;
+	public WebDriverWait wait;
+	public Locator locator;
+	public WebUtils webUtils;
 
 	public HomePage(WebDriver driver) {
 		locator = new Locator();
