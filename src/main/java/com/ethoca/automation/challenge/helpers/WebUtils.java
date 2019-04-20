@@ -71,7 +71,7 @@ public class WebUtils {
 	}
 
 	// Selenium Implicit Wait
-	public void implicitWait(long seconds) {
+	public void implicitWait(int seconds) {
 		driver.manage().timeouts().implicitlyWait(seconds, TimeUnit.SECONDS);
 	}
 

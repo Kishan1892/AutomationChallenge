@@ -121,10 +121,10 @@ public class EthocaTestCase {
 
 			// Click on Add to Cart Button
 			objHome.click(locator.productPrintedChiffonDressAddtoCart);
+			objHome.implicitWait(2);
 
 			// Wait for Continue Shopping Button to be Visible
 			objHome.waitForElement(locator.continueShopping);
-			objHome.implicitWait(2);
 
 			// Click on Continue Shopping Button
 			objHome.click(locator.continueShopping);
